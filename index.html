@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TimeZone API</h1>
+        <div class="current-timezone">
+            <h2>Your Current Time Zone</h2>
+            <div class="timezone-info" id="current-timezone-info">
+                <p>Name Of Time Zone: <span id="current-timezone-name"></span></p>
+                <div style="display: flex; justify-content: space-between;"><p style=" margin: 0px;" id="current-lat">Lat: </p><p style=" margin: 0px;" id="current-long">Long: </p></div>
+                <p>Offset STD: <span id="current-offset-std"></span></p>
+                <p>Offset STD Seconds: <span id="current-offset-std-seconds"></span></p>
+                <p>Offset DST: <span id="current-offset-dst"></span></p>
+                <p>Offset DST Seconds: <span id="current-offset-dst-seconds"></span></p>
+                <p>Country: <span id="current-country"></span></p>
+                <p>Postcode: <span id="current-postcode"></span></p>
+                <p>City: <span id="current-city"></span></p>
+            </div>
+        </div>
+        <div class="enter-address" style="background-color: black; color: white;">
+            <h2>Enter Address</h2>
+            <input type="text" id="address" placeholder="Address">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="result" id="result" style="display: none;background-color: black; color: white;">
+            <h2>Your result</h2>
+            <div class="timezone-info">
+                <p>Name Of Time Zone: <span id="result-timezone-name"></span></p>
+                <p>Lat: <span id="result-lat"></span> Long: <span id="result-long"></span></p>
+                <p>Offset STD: <span id="result-offset-std"></span></p>
+                <p>Offset STD Seconds: <span id="result-offset-std-seconds"></span></p>
+                <p>Offset DST: <span id="result-offset-dst"></span></p>
+                <p>Offset DST Seconds: <span id="result-offset-dst-seconds"></span></p>
+                <p>Country: <span id="result-country"></span></p>
+                <p>Postcode: <span id="result-postcode"></span></p>
+                <p>City: <span id="result-city"></span></p>
+            </div>
+        </div>
+        <div class="error" id="error" style="display: none;">
+            <p class="error-message" id="error-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
